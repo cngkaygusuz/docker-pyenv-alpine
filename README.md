@@ -16,10 +16,10 @@ RUN mkdir -p /app
 COPY . /app
 WORKDIR /app
 
-RUN . /init.sh && \ #MUST
+RUN bash -c ". /init.sh && \
     pip install -r requirements.txt && \
     pip install whatever packages you like && \
-    pyenv rehash
+    pyenv rehash"
 
 EXPOSE 3000
 
