@@ -33,9 +33,7 @@ Setting the PATH and initializing pyenv is mandatory. Running code with [`exec`]
 ```
 #!/bin/bash
 
-export PYENV_ROOT="/root/.pyenv" && \
-export PATH="$PYENV_ROOT/bin:$PATH" && \
-eval "$(pyenv init -)" && \
+. /init.sh && \
 exec somecommandthatisinpython
 ```
 
