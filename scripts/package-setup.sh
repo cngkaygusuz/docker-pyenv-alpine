@@ -3,6 +3,7 @@
 apk add --no-cache --update \
   bash \
   build-base \
+  patch \
   ca-certificates \
   git \
   bzip2-dev \
